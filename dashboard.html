@@ -8,7 +8,7 @@
 
 <body class="beige-achtergrond">
   <h1>Dashboard</h1>
-  <p>Welcome to this dashboard!</p>
+  <p>Welkom bij het dashboard!</p>
   <div class="sidebar-left" id="menu">
     <nav>
       <a href="index.html">Home</a>
@@ -18,107 +18,58 @@
       <a href="blog">Blog</a>
     </nav>
   </div>
-  <table class="dashboard-table">
-    <caption>HZ ICT exams this year</caption>
-    <thead>
-      <tr>
-        <th scope="col">Quartile</th>
-        <th scope="col">Course</th>
-        <th scope="col">Exam</th>
-        <th scope="col">Credits</th>
-        <th scope="col">Grade</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Q1</td>
-        <th scope="row">Programme- &amp; Career Orientation</th>
-        <td><input type="text" placeholder="Exam name"></td>
-        <td><input type="number" min="0" step="0.5" placeholder="ECTS"></td>
-        <td><input type="number" min="1" max="10" step="0.1" placeholder="Grade"></td>
-      </tr>
-      <tr>
-        <td>Q1</td>
-        <th scope="row">Programming Basics</th>
-        <td><input type="text" placeholder="Exam name"></td>
-        <td><input type="number" min="0" step="0.5" placeholder="ECTS"></td>
-        <td><input type="number" min="1" max="10" step="0.1" placeholder="Grade"></td>
-      </tr>
-      <tr>
-        <td>Q1</td>
-        <th scope="row">Computer Science Basics</th>
-        <td><input type="text" placeholder="Exam name"></td>
-        <td><input type="number" min="0" step="0.5" placeholder="ECTS"></td>
-        <td><input type="number" min="1" max="10" step="0.1" placeholder="Grade"></td>
-      </tr>
-      <tr>
-        <td>Q2</td>
-        <th scope="row">Object Oriented Programming</th>
-        <td><input type="text" placeholder="Exam name"></td>
-        <td><input type="number" min="0" step="0.5" placeholder="ECTS"></td>
-        <td><input type="number" min="1" max="10" step="0.1" placeholder="Grade"></td>
-      </tr>
-      <tr>
-        <td>Q2</td>
-        <th scope="row">Agile and Team Management</th>
-        <td><input type="text" placeholder="Exam name"></td>
-        <td><input type="number" min="0" step="0.5" placeholder="ECTS"></td>
-        <td><input type="number" min="1" max="10" step="0.1" placeholder="Grade"></td>
-      </tr>
-      <tr>
-        <td>Q2</td>
-        <th scope="row">Project: Foundations</th>
-        <td><input type="text" placeholder="Exam name"></td>
-        <td><input type="number" min="0" step="0.5" placeholder="ECTS"></td>
-        <td><input type="number" min="1" max="10" step="0.1" placeholder="Grade"></td>
-      </tr>
-      <tr>
-        <td>Q3</td>
-        <th scope="row">Software Engineering Basics</th>
-        <td><input type="text" placeholder="Exam name"></td>
-        <td><input type="number" min="0" step="0.5" placeholder="ECTS"></td>
-        <td><input type="number" min="1" max="10" step="0.1" placeholder="Grade"></td>
-      </tr>
-      <tr>
-        <td>Q3</td>
-        <th scope="row">Foundations of Data</th>
-        <td><input type="text" placeholder="Exam name"></td>
-        <td><input type="number" min="0" step="0.5" placeholder="ECTS"></td>
-        <td><input type="number" min="1" max="10" step="0.1" placeholder="Grade"></td>
-      </tr>
-      <tr>
-        <td>Q3</td>
-        <th scope="row">Requirements Modelling</th>
-        <td><input type="text" placeholder="Exam name"></td>
-        <td><input type="number" min="0" step="0.5" placeholder="ECTS"></td>
-        <td><input type="number" min="1" max="10" step="0.1" placeholder="Grade"></td>
-      </tr>
-      <tr>
-        <td>Q4</td>
-        <th scope="row">Web Application Development</th>
-        <td><input type="text" placeholder="Exam name"></td>
-        <td><input type="number" min="0" step="0.5" placeholder="ECTS"></td>
-        <td><input type="number" min="1" max="10" step="0.1" placeholder="Grade"></td>
-      </tr>
-      <tr>
-        <td>Q4</td>
-        <th scope="row">Data Science Basics</th>
-        <td><input type="text" placeholder="Exam name"></td>
-        <td><input type="number" min="0" step="0.5" placeholder="ECTS"></td>
-        <td><input type="number" min="1" max="10" step="0.1" placeholder="Grade"></td>
-      </tr>
-      <tr>
-        <td>Q4</td>
-        <th scope="row">Project: Applied Client Solutions</th>
-        <td><input type="text" placeholder="Exam name"></td>
-        <td><input type="number" min="0" step="0.5" placeholder="ECTS"></td>
-        <td><input type="number" min="1" max="10" step="0.1" placeholder="Grade"></td>
-      </tr>
-    </tbody>
+
+  <table id="table">
+    <tr>
+      <th colspan="1">Quarter</th>
+      <th rowspan="1">Course</th>
+      <th>EC</th>
+      <th>Exam</th>
+      <th>Grade</th>
+    </tr>
+    <tr>
+      <td rowspan="3">1</td>
+      <td>First course</td>
+      <td>5</td>
+      <td>Written</td>
+
+    </tr>
+    <tr>
+      <td>Second course</td>
+      <td rowspan="1">5</td>
+      <td>Case study</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Assessment</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
   </table>
-  <img id="fotomoos2"src="Images/foto-moos.jpeg" alt="Foto van Moos">
+
+  <img id="fotomoos2" src="Images/foto-moos.jpeg" alt="Foto van Moos">
 </body>
 
 </html>
-
- 
