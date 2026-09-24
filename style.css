@@ -1,0 +1,252 @@
+body {
+    background-color: beige;
+}
+
+.beige-achtergrond {
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+h1,
+h2,
+p,
+a,
+h3 {
+    text-align: center;
+}
+
+.home {
+    width: 20%;
+    height: 75vh;
+    background-color: seagreen;
+
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu {
+    min-height: 50vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 25px;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.sidebar-left {
+    width: 20%;
+    height: 100vh;
+    background-color: seagreen;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.sidebar-right {
+    overflow: hidden;
+    z-index: -1;
+}
+
+.blogs {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: text-shadow 1s ease;
+}
+
+nav a:hover {
+    text-shadow:
+        0 0 5px white,
+        0 0 10px white,
+        0 0 20px white,
+        0 0 30px seagreen;
+}
+
+nav a.active {
+    text-shadow:
+        0 0 5px white,
+        0 0 10px white,
+        0 0 20px white,
+        0 0 30px seagreen;
+}
+
+#fotomoos {
+    width: 20vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#fotomoos2 {
+    width: 20vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#jumbo-foto {
+    width: 50%;
+    height: 20vh;
+    object-fit: cover;
+    position: fixed;
+    top: 16.5%;
+    left: 17.5%;
+    z-index: -1;
+    transform: scale(0.3);
+}
+
+#bord-tholen {
+    width: 50%;
+    height: 20vh;
+    object-fit: cover;
+    position: fixed;
+    top: 16.5%;
+    left: 32%;
+    z-index: -1;
+    transform: scale(0.3);
+}
+
+#deherinnerdesoldaat {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    position: fixed;
+    transform: scale(1.1);
+    top: 35%;
+    left: 63%;
+}
+
+#fotomoos5 {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    position: fixed;
+    transform: scale(1.18);
+    top: 37%;
+    left: 29%;
+}
+
+#goalsdirectiondown {
+    position: fixed;
+    align-items: center;
+    left: 47%;
+}
+
+.button {
+    color: white;
+    background-color: seagreen;
+    z-index: 2;
+    margin-top: 0%;
+}
+
+.outline-button {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 2px solid beige;
+    color: black;
+    background-color: antiquewhite;
+}
+
+.outline-button:hover {
+    color: black;
+    background-color: beige;
+}
+
+.blog-page,
+.articles-page {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: left;
+    background-color: beige;
+    border: 2px solid beige;
+}
+
+.blog-page h1,
+.blog-page h2,
+.blog-page p,
+.articles-page h1,
+.articles-page h2,
+.articles-page p {
+    text-align: left;
+}
+
+.blog-subject {
+    display: block;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid beige;
+    color: black;
+    background-color: antiquewhite;
+}
+
+.article {
+    margin: 25px 0;
+    padding: 15px;
+    border: 1px solid beige;
+    background-color: antiquewhite;
+}
+
+.back-link {
+    color: black;
+    text-decoration: underline;
+}
+
+#table {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Blocnoot met de tekst "Moos" die met een pijl naar fotomoos wijst */
+#blocnoot {
+    position: fixed;
+    top: -30%;
+    left: 37.5%;
+    transform: scale(0.2) rotate(-5deg);
+}
+
+#geenpuntjes {
+    list-style: none;
+}
