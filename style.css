@@ -140,10 +140,10 @@ nav a.active {
     height: 20vh;
     object-fit: cover;
     position: fixed;
-    top: 16.5%;
-    left: 32%;
+    top: 50%;
+    left: 50%;
     z-index: -1;
-    transform: scale(0.3);
+    transform: translate(-50%, -50%) scale(0.3);
 }
 
 #deherinnerdesoldaat {
@@ -249,4 +249,107 @@ nav a.active {
 
 #geenpuntjes {
     list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
+
+#geenpuntjes li {
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 0;
+        padding: 1rem;
+        overflow-x: hidden;
+    }
+
+    .beige-achtergrond {
+        overflow: visible;
+    }
+
+    .sidebar-left {
+        position: static;
+        width: auto;
+        height: auto;
+        min-height: 0;
+        margin: -1rem -1rem 1rem;
+        padding: 0.75rem;
+        overflow: visible;
+    }
+
+    #menu {
+        min-height: 0;
+    }
+
+    .sidebar-left nav,
+    .home nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .home {
+        position: static;
+        width: auto;
+        height: auto;
+        min-height: 0;
+        margin: 1rem 0;
+        padding: 1rem;
+        transform: none;
+    }
+
+    #fotomoos,
+    #fotomoos2,
+    #blocnoot,
+    #jumbo-foto {
+        display: none;
+    }
+
+    #bord-tholen {
+        position: static;
+        display: block;
+        margin: 1rem auto;
+        transform: scale(0.3);
+    }
+
+    #deherinnerdesoldaat,
+    #fotomoos5 {
+        position: static;
+        display: block;
+        width: min(100%, 220px);
+        height: auto;
+        margin: 1rem auto;
+        transform: none;
+    }
+
+    #table {
+        position: static;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        transform: none;
+    }
+
+    #goalsdirectiondown {
+        position: static;
+        transform: none;
+    }
+
+    #goalsdirectiondown h3 {
+        flex-wrap: wrap;
+    }
+
+    .blog-page,
+    .articles-page {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 1rem 0;
+        padding: 1rem;
+    }
 }
