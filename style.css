@@ -168,8 +168,17 @@ nav a.active {
 
 #goalsdirectiondown {
     position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#goalsdirectiondown h3 {
+    margin: 0;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
     align-items: center;
-    left: 47%;
 }
 
 .button {
@@ -177,6 +186,20 @@ nav a.active {
     background-color: seagreen;
     z-index: 2;
     margin-top: 0%;
+}
+
+.blog-button {
+    display: inline-block;
+    margin: 6px;
+    padding: 6px 12px;
+    border: 2px solid seagreen;
+    color: black;
+    background-color: antiquewhite;
+}
+
+.blog-button:hover {
+    color: white;
+    background-color: seagreen;
 }
 
 .outline-button {
