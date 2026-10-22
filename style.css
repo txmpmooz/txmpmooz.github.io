@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: beige;
+    background-color: antiquewhite;
 }
 
 .beige-achtergrond {
@@ -22,7 +22,8 @@ h3 {
 .home {
     width: 20%;
     height: 75vh;
-    background-color: seagreen;
+    background-color: #1F3A5F;
+    border-radius: 20px;
 
     position: fixed;
     top: 20%;
@@ -34,6 +35,65 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.home-page ul {
+    box-sizing: border-box;
+    max-width: 42rem;
+    margin: 1rem auto;
+    padding-left: 2.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.home-page .home {
+    position: relative;
+    box-sizing: border-box;
+    width: min(80vw, 22rem, 40vh);
+    height: 50vh;
+    min-height: 0;
+    margin: 1rem auto 0;
+    padding: 1.5rem;
+    top: auto;
+    left: auto;
+    transform: none;
+}
+
+.home-page #menu {
+    min-height: 0;
+}
+
+.home-page nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    font-size: 1.25rem;
+}
+
+.home-page {
+    box-sizing: border-box;
+    height: 100vh;
+    height: 100dvh;
+    margin: 0;
+    padding: 3rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-content {
+    box-sizing: border-box;
+    width: min(42rem, 100%);
+    margin: 0 auto;
+}
+
+.home-content h1,
+.home-content h2 {
+    text-align: center;
+}
+
+.home-page ul {
+    margin: 1rem auto;
 }
 
 #menu {
@@ -56,8 +116,8 @@ a {
 .sidebar-left {
     width: 20%;
     height: 100vh;
-    background-color: seagreen;
-
+    background-color: #1F3A5F;
+    border-radius: 0px;
     position: fixed;
     left: 0;
     top: 0;
@@ -92,7 +152,7 @@ nav a:hover {
         0 0 5px white,
         0 0 10px white,
         0 0 20px white,
-        0 0 30px seagreen;
+        0 0 30px cyan;
 }
 
 nav a.active {
@@ -186,6 +246,102 @@ nav a.active {
     background-color: seagreen;
 }
 
+.blog-landing {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.blog-landing-content {
+    box-sizing: border-box;
+    width: min(900px, calc(60vw - 4rem));
+    margin: 0 0 3rem calc(20vw + 2rem);
+    padding-top: 5rem;
+}
+
+.blog-landing-header {
+    margin-bottom: 2rem;
+}
+
+.blog-landing-header h1 {
+    margin: 0.25rem 0 0.75rem;
+    color: #1F3A5F;
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    text-align: left;
+}
+
+.blog-landing-header p {
+    max-width: 38rem;
+    margin: 0;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.blog-landing-header .blog-landing-eyebrow {
+    color: seagreen;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.blog-landing-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.blog-landing .blog-button {
+    position: relative;
+    display: flex;
+    min-height: 12rem;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 1.5rem;
+    border: 0;
+    border-top: 4px solid seagreen;
+    border-radius: 12px;
+    color: #1F3A5F;
+    background-color: beige;
+    box-shadow: 0 6px 20px rgb(31 58 95 / 10%);
+    text-align: left;
+    transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.blog-landing .blog-button:hover {
+    transform: translateY(-4px);
+    color: #1F3A5F;
+    background-color: white;
+    box-shadow: 0 10px 26px rgb(31 58 95 / 16%);
+}
+
+.blog-card-number {
+    margin-bottom: 1rem;
+    color: seagreen;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.blog-card-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.blog-card-description {
+    max-width: 20rem;
+    line-height: 1.6;
+}
+
+.blog-card-arrow {
+    align-self: flex-end;
+    margin-top: auto;
+    color: seagreen;
+    font-size: 1.5rem;
+}
+
 .outline-button {
     display: inline-block;
     padding: 10px 18px;
@@ -239,6 +395,88 @@ nav a.active {
     text-align: left;
 }
 
+.page {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.page .content {
+    box-sizing: border-box;
+    width: min(900px, calc(60vw - 4rem));
+    margin: 2.5rem 0 3rem calc(20vw + 2rem);
+}
+
+.page .header {
+    margin-bottom: 1.5rem;
+}
+
+.page .header h1 {
+    margin: 0.25rem 0 0.5rem;
+    color: #1F3A5F;
+    text-align: left;
+}
+
+.page .header p,
+.page .card p,
+.page .vision p {
+    margin: 0;
+    line-height: 1.65;
+    text-align: left;
+}
+
+.page .header .eyebrow {
+    color: seagreen;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.page .pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+    gap: 1rem;
+}
+
+.page .card {
+    padding: 1.25rem;
+    border-top: 4px solid seagreen;
+    border-radius: 10px;
+    background-color: beige;
+    box-shadow: 0 4px 14px rgb(31 58 95 / 10%);
+}
+
+.page .label {
+    color: seagreen;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.page .card h2,
+.page .vision h2 {
+    margin: 0.6rem 0;
+    color: #1F3A5F;
+    text-align: left;
+}
+
+.page .vision {
+    margin-top: 1rem;
+    padding: 1.25rem;
+    border-radius: 10px;
+    color: white;
+    background-color: #1F3A5F;
+}
+
+.page .vision h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.page .vision p {
+    color: white;
+}
+
 .blog-subject {
     display: block;
     margin: 20px 0;
@@ -260,11 +498,197 @@ nav a.active {
     text-decoration: underline;
 }
 
-#table {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.dashboard-page {
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.dashboard-content {
+    box-sizing: border-box;
+    width: min(900px, calc(60vw - 4rem));
+    margin: 1.5rem 0 2rem calc(20vw + 2rem);
+}
+
+.dashboard-header {
+    margin-bottom: 1rem;
+}
+
+.dashboard-header h1 {
+    margin: 0.25rem 0 0.5rem;
+    color: #1F3A5F;
+    text-align: left;
+}
+
+.dashboard-header p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.dashboard-eyebrow {
+    color: seagreen;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.dashboard-table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+    border-radius: 10px;
+}
+
+.dashboard-table {
+    width: 100%;
+    min-width: 780px;
+    border-collapse: separate;
+    border-spacing: 0.4rem;
+    table-layout: fixed;
+}
+
+.dashboard-table caption {
+    padding: 0.5rem;
+    color: #1F3A5F;
+    font-weight: 700;
+    text-align: left;
+}
+
+.dashboard-table thead th {
+    height: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.dashboard-table tbody th {
+    padding: 0.65rem;
+    border-radius: 7px;
+    color: #1F3A5F;
+    background-color: beige;
+    text-align: left;
+}
+
+.dashboard-table tbody th:first-child {
+    width: 5.5rem;
+}
+
+.dashboard-course {
+    padding: 0.7rem;
+    border: 1px solid rgb(31 58 95 / 16%);
+    border-left: 4px solid seagreen;
+    border-radius: 8px;
+    background-color: antiquewhite;
+    vertical-align: top;
+    transition: background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.dashboard-course:hover,
+.dashboard-course:focus-visible {
+    outline: 3px solid seagreen;
+    outline-offset: 2px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgb(31 58 95 / 14%);
+}
+
+.dashboard-course dl {
+    margin: 0;
+}
+
+.dashboard-course dl div {
+    display: grid;
+    grid-template-columns: minmax(5rem, auto) 1fr;
+    gap: 0.3rem;
+    padding: 0.15rem 0;
+    font-size: 0.8rem;
+    line-height: 1.3;
+}
+
+.dashboard-course dt {
+    color: #1F3A5F;
+    font-weight: 700;
+}
+
+.dashboard-course dd {
+    margin: 0;
+    min-height: 1em;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 1000px) {
+    .dashboard-page {
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .dashboard-page .sidebar-left {
+        position: static;
+        width: auto;
+        height: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 0.5rem;
+        border-radius: 0 0 12px 12px;
+        overflow: visible;
+    }
+
+    .dashboard-page #menu {
+        min-height: 0;
+    }
+
+    .dashboard-page nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .dashboard-content {
+        width: 100%;
+        margin: 0;
+        padding: 0.5rem 1rem;
+    }
+
+    .dashboard-header {
+        margin-bottom: 0.35rem;
+    }
+
+    .dashboard-header h1 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .dashboard-eyebrow {
+        font-size: 0.65rem;
+    }
+
+    .dashboard-table {
+        border-spacing: 0.2rem;
+    }
+
+    .dashboard-table caption {
+        padding: 0.2rem;
+    }
+
+    .dashboard-table tbody th {
+        padding: 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .dashboard-course {
+        padding: 0.4rem;
+    }
+
+    .dashboard-course dl div {
+        grid-template-columns: minmax(4.4rem, auto) minmax(0, 1fr);
+        gap: 0.2rem;
+        padding: 0.1rem 0;
+        font-size: 0.72rem;
+        line-height: 1.15;
+    }
 }
 
 /* Blocnoot met de tekst "Moos" die met een pijl naar fotomoos wijst */
@@ -273,6 +697,10 @@ nav a.active {
     top: -30%;
     left: 37.5%;
     transform: scale(0.2) rotate(-5deg);
+}
+
+.home-page #blocnoot {
+    top: -25%;
 }
 
 .about-page {
@@ -336,6 +764,30 @@ nav a.active {
     object-fit: cover;
 }
 
+.about-socials {
+    margin-top: 1.5rem;
+}
+
+.about-socials h2 {
+    margin-bottom: 0.75rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    color: #1F3A5F;
+}
+
+.social-icon {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
 @media (max-width: 700px) {
     body {
         margin: 0;
@@ -347,6 +799,13 @@ nav a.active {
         overflow: visible;
     }
 
+    .dashboard-page {
+        display: block;
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+
     .sidebar-left {
         position: static;
         width: auto;
@@ -355,6 +814,10 @@ nav a.active {
         margin: -1rem -1rem 1rem;
         padding: 0.75rem;
         overflow: visible;
+    }
+
+    .dashboard-page .sidebar-left {
+        margin: -1rem -1rem 1rem;
     }
 
     #menu {
@@ -368,6 +831,19 @@ nav a.active {
         justify-content: center;
         gap: 0.5rem 1rem;
         font-size: 1rem;
+    }
+
+    .home-page nav {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .home-page .home {
+        width: min(80vw, 22rem, 30vh);
+        height: 40vh;
+        padding: 0.75rem;
     }
 
     .home {
@@ -394,13 +870,16 @@ nav a.active {
         transform: scale(0.3);
     }
 
-    #table {
-        position: static;
-        display: block;
+    .dashboard-content {
         width: 100%;
-        max-width: 100%;
-        overflow-x: auto;
-        transform: none;
+        min-height: 0;
+        margin: 1.5rem 0;
+        padding: 0;
+        overflow: visible;
+    }
+
+    .dashboard-table-wrap {
+        width: 100%;
     }
 
     #goalsdirectiondown {
@@ -420,10 +899,29 @@ nav a.active {
         padding: 1rem;
     }
 
+    .blog-landing-content {
+        width: 100%;
+        margin: 0;
+        padding-top: 2rem;
+    }
+
+    .blog-landing-links {
+        grid-template-columns: 1fr;
+    }
+
     .why-it-content {
         width: 100%;
         margin: 1rem 0;
         padding: 1rem;
+    }
+
+    .page .content {
+        width: 100%;
+        margin: 1.5rem 0;
+    }
+
+    .page .pillars {
+        grid-template-columns: 1fr;
     }
 
     .about-content {

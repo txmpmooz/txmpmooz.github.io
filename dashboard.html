@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
   <title>Dashboard</title>
@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body class="beige-achtergrond">
+<body class="beige-achtergrond dashboard-page">
   <div class="sidebar-left" id="menu">
     <nav>
       <a href="index.html">Home</a>
@@ -21,58 +21,110 @@
       <a href="blog.html">Blog</a>
     </nav>
   </div>
-  <h1>Dashboard</h1>
-  <p>Welkom bij het dashboard!</p>
-
-  <table id="table">
-    <tr>
-      <th colspan="1">Quarter</th>
-      <th rowspan="1">Course</th>
-      <th>EC</th>
-      <th>Exam</th>
-      <th>Grade</th>
-    </tr>
-    <tr>
-      <td rowspan="3">1</td>
-      <td>First course</td>
-      <td>5</td>
-      <td>Written</td>
-
-    </tr>
-    <tr>
-      <td>Second course</td>
-      <td rowspan="1">5</td>
-      <td>Case study</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>Assessment</td>
-      <td></td>
-    </tr>
-
-    <tr>
-      <td>2</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-  </table>
+  <main class="dashboard-content">
+    <header class="dashboard-header">
+      <p class="dashboard-eyebrow">HBO-ICT · studieoverzicht</p>
+      <h1>Dashboard</h1>
+    </header>
+    <div class="dashboard-table-wrap" role="region" aria-label="Studieoverzicht per blok" tabindex="0">
+      <table class="dashboard-table">
+        <thead>
+          <tr>
+            <th scope="col" aria-label="Blok"></th>
+            <th scope="col" aria-label="Vak 1"></th>
+            <th scope="col" aria-label="Vak 2"></th>
+            <th scope="col" aria-label="Vak 3"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Blok 1</th>
+            <td class="dashboard-course" tabindex="0"><dl>
+              <div><dt>EC</dt><dd></dd></div>
+              <div><dt>Soort examen</dt><dd></dd></div>
+              <div><dt>Cijfer</dt><dd></dd></div>
+              <div><dt>Status</dt><dd></dd></div>
+            </dl></td>
+            <td class="dashboard-course" tabindex="0"><dl>
+              <div><dt>EC</dt><dd></dd></div>
+              <div><dt>Soort examen</dt><dd></dd></div>
+              <div><dt>Cijfer</dt><dd></dd></div>
+              <div><dt>Status</dt><dd></dd></div>
+            </dl></td>
+            <td class="dashboard-course" tabindex="0"><dl>
+              <div><dt>EC</dt><dd></dd></div>
+              <div><dt>Soort examen</dt><dd></dd></div>
+              <div><dt>Cijfer</dt><dd></dd></div>
+              <div><dt>Status</dt><dd></dd></div>
+            </dl></td>
+          </tr>
+          <tr>
+            <th scope="row">Blok 2</th>
+            <td class="dashboard-course" tabindex="0"><dl>
+              <div><dt>EC</dt><dd></dd></div>
+              <div><dt>Soort examen</dt><dd></dd></div>
+              <div><dt>Cijfer</dt><dd></dd></div>
+              <div><dt>Status</dt><dd></dd></div>
+            </dl></td>
+            <td class="dashboard-course" tabindex="0"><dl>
+              <div><dt>EC</dt><dd></dd></div>
+              <div><dt>Soort examen</dt><dd></dd></div>
+              <div><dt>Cijfer</dt><dd></dd></div>
+              <div><dt>Status</dt><dd></dd></div>
+            </dl></td>
+            <td class="dashboard-course" tabindex="0"><dl>
+              <div><dt>EC</dt><dd></dd></div>
+              <div><dt>Soort examen</dt><dd></dd></div>
+              <div><dt>Cijfer</dt><dd></dd></div>
+              <div><dt>Status</dt><dd></dd></div>
+            </dl></td>
+          </tr>
+          <tr>
+            <th scope="row">Blok 3</th>
+            <td class="dashboard-course" tabindex="0"><dl>
+              <div><dt>EC</dt><dd></dd></div>
+              <div><dt>Soort examen</dt><dd></dd></div>
+              <div><dt>Cijfer</dt><dd></dd></div>
+              <div><dt>Status</dt><dd></dd></div>
+            </dl></td>
+            <td class="dashboard-course" tabindex="0"><dl>
+              <div><dt>EC</dt><dd></dd></div>
+              <div><dt>Soort examen</dt><dd></dd></div>
+              <div><dt>Cijfer</dt><dd></dd></div>
+              <div><dt>Status</dt><dd></dd></div>
+            </dl></td>
+            <td class="dashboard-course" tabindex="0"><dl>
+              <div><dt>EC</dt><dd></dd></div>
+              <div><dt>Soort examen</dt><dd></dd></div>
+              <div><dt>Cijfer</dt><dd></dd></div>
+              <div><dt>Status</dt><dd></dd></div>
+            </dl></td>
+          </tr>
+          <tr>
+            <th scope="row">Blok 4</th>
+            <td class="dashboard-course" tabindex="0"><dl>
+              <div><dt>EC</dt><dd></dd></div>
+              <div><dt>Soort examen</dt><dd></dd></div>
+              <div><dt>Cijfer</dt><dd></dd></div>
+              <div><dt>Status</dt><dd></dd></div>
+            </dl></td>
+            <td class="dashboard-course" tabindex="0"><dl>
+              <div><dt>EC</dt><dd></dd></div>
+              <div><dt>Soort examen</dt><dd></dd></div>
+              <div><dt>Cijfer</dt><dd></dd></div>
+              <div><dt>Status</dt><dd></dd></div>
+            </dl></td>
+            <td class="dashboard-course" tabindex="0"><dl>
+              <div><dt>EC</dt><dd></dd></div>
+              <div><dt>Soort examen</dt><dd></dd></div>
+              <div><dt>Cijfer</dt><dd></dd></div>
+              <div><dt>Status</dt><dd></dd></div>
+            </dl></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
 
   <img id="fotomoos2" src="Images/foto-moos.jpeg" alt="Foto van Moos">
 </body>

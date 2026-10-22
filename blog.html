@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jij hebt oog voor detail!</title>
+    <title>Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="blog-landing">
     <div class="sidebar-left" id="menu">
         <nav>
             <a href="index.html">Home</a>
@@ -21,15 +21,28 @@
             <a href="blog.html" class="active">Blog</a>
         </nav>
     </div>
-    <h1>My Blog</h1>
-    <p>Welkom op mijn blog!</p>
+    <main class="blog-landing-content">
+        <header class="blog-landing-header">
+            <p class="blog-landing-eyebrow">Persoonlijke groei & toekomst</p>
+            <h1>Mijn blog</h1>
+            <p>Lees meer over de doelen waar ik aan werk en de richting die ik op wil in de ICT.</p>
+        </header>
 
-    <div id="goalsdirectiondown">
-        <h3>
-            <a class="blog-button" href="goals.html">My Goals</a>
-            <a class="blog-button" href="direction.html">My Direction</a>
-        </h3>
-    </div>
+        <section class="blog-landing-links" aria-label="Blogonderwerpen">
+            <a class="blog-button" href="goals.html">
+                <span class="blog-card-number">01</span>
+                <span class="blog-card-title">Mijn doelen</span>
+                <span class="blog-card-description">Waar ik dit jaar aan wil werken en in wil groeien.</span>
+                <span class="blog-card-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="blog-button" href="direction.html">
+                <span class="blog-card-number">02</span>
+                <span class="blog-card-title">Mijn richting</span>
+                <span class="blog-card-description">Mijn plannen en toekomst als Software Developer.</span>
+                <span class="blog-card-arrow" aria-hidden="true">→</span>
+            </a>
+        </section>
+    </main>
 </body>
 
 </html>
