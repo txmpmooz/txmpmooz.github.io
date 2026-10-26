@@ -3,7 +3,19 @@
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: #faebd7;
+}
+
+body::after {
+    position: fixed;
+    top: 1rem;
+    right: calc(20vw + 1rem);
+    z-index: 1;
+    width: 76px;
+    height: 76px;
+    background: url("Images/hz-logo-faebd7.png") center / contain no-repeat;
+    content: "";
+    pointer-events: none;
 }
 
 .beige-achtergrond {
